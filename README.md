@@ -1,2 +1,2 @@
-# crud-operation
- using node.js express.js, mongodb, and Ejs
+# CRUD-Operation
+ using Node.js, Express.js, MongoDB and EJS  

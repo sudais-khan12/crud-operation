@@ -1,0 +1,182 @@
+form button {
+  padding: 10px;
+  background-color: #00848dc7;
+  color: #fff;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+}
+
+.logout-btn {
+  text-decoration: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.logout-btn::before,
+.logout-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7d8082;
+  transition: all 0.15s ease;
+}
+
+.logout-btn::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.logout-btn::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.logout-btn:active,
+.logout-btn:focus {
+  outline: none;
+}
+
+.logout-btn:active::before,
+.logout-btn:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.logout-btn:active::before {
+  top: 3px;
+}
+
+.logout-btn:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all 0.2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #ff4655;
+  transform: skew(-15deg);
+  transition: all 0.2s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.logout-btn:hover {
+  color: #0f1923;
+}
+
+.logout-btn:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.logout-btn:hover .button_lg::after {
+  background-color: #fff;
+}
+
+.save {
+  font-family: inherit;
+  font-size: 15px;
+  background: #212121;
+  color: white;
+  fill: rgb(155, 153, 153);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 15px; */
+  font-weight: 1000;
+}
+
+.save span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.save svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.save:hover {
+  background: #000;
+}
+
+.save:hover .svg-wrapper {
+  transform: scale(1.25);
+  transition: 0.5s linear;
+}
+
+.save:hover svg {
+  transform: translateX(1.2em) scale(1.1);
+  fill: #fff;
+}
+
+.save:hover span {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+
+.save:active {
+  transform: scale(0.95);
+}
